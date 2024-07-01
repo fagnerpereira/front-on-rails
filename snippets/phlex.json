@@ -1,10 +1,68 @@
 {
-  "link_to": {
+  "New phlex component class": {
     "scope": "ruby",
+    "prefix": ["class"],
+    "body": [
+      "class ${1:Example}Component < ${2|Phlex::HTML,ApplicationComponent|}",
+      "  def template",
+      "    $0",
+      "  end",
+      "end",
+      ""
+    ],
+    "description": "New Phlex Component class."
+  },
+  "New phlex component shortcut": {
+    "scope": "ruby",
+    "prefix": ["component"],
+    "body": [
+      "class ${1:Example}Component < ${2|Phlex::HTML,ApplicationComponent|}",
+      "  def template",
+      "    $0",
+      "  end",
+      "end",
+      ""
+    ],
+    "description": "New Phlex Component class."
+  },
+  "Phlex template method": {
+    "scope": "ruby",
+    "prefix": ["template"],
+    "body": [
+      "def template",
+      "  $0",
+      "end",
+      ""
+    ],
+    "description": "Phlex template method."
+  },
+  "Define template method": {
+    "prefix": ["def template"],
+    "body": ["def template", "  $0", "end"],
+    "description": "New template method."
+  },
+  "Phlex render method": {
+    "scope": "ruby",
+    "prefix": ["render"],
+    "body": [
+      "render ${1:SomeComponent}.new"
+    ],
+    "description": "Phlex render method for rendering another component."
+  },
+  "Link To Inline": {
     "prefix": "link_to",
     "body": [
-      "link_to '${1:Link}', '${2:#}'"
+      "link_to '${1:Link Text}', ${2:url_path}"
     ],
-    "description": "Creates a link_to helper in Phlex classes"
+    "description": "Creates a link_to inline in PHLEX"
+  },
+  "Link To Block": {
+    "prefix": "link_to",
+    "body": [
+      "link_to '${1:url_path}' do",
+      "  $0",
+      "end"
+    ],
+    "description": "Creates a link_to block in PHLEX"
   }
 }
