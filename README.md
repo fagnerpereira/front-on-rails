@@ -25,11 +25,13 @@ Open a `.rb` or `.erb` file and use the provided snippets. For example, type `li
 ### ERB Snippets
 
 - working in progress
+- todo: https://rubydoc.info/github/hotwired/turbo-rails/Turbo/FramesHelper
 
 ### Phlex Snippets
 
 - working in progress
 - todo: https://rubydoc.info/gems/phlex-rails/Phlex/Rails/Helpers
+        https://rubydoc.info/gems/phlex/Phlex/HTML/StandardElements
 
 ## Contributing
 
