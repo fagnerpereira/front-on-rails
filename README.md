@@ -37,3 +37,4 @@ Feel free to contribute by making a fork of the repository, creating a new branc
 ## License
 
 This extension is licensed under the [MIT License](LICENSE).
+# front-on-rails
