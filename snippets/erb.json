@@ -1,0 +1,18 @@
+{
+  "Link To Inline": {
+    "prefix": "link_to",
+    "body": [
+      "<%= link_to '${1:Link Text}', ${2:url_path} %>"
+    ],
+    "description": "Creates a link_to helper in ERB"
+  },
+  "Link To Block": {
+    "prefix": "link_to",
+    "body": [
+      "<%= link_to '${1:Link Text}' do %>",
+      "  ${2:# body}",
+      "<% end %>"
+    ],
+    "description": "Creates a link_to helper in ERB"
+  }
+}

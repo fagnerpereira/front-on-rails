@@ -1,0 +1,10 @@
+{
+  "link_to": {
+    "scope": "ruby",
+    "prefix": "link_to",
+    "body": [
+      "link_to '${1:Link}', '${2:#}'"
+    ],
+    "description": "Creates a link_to helper in Phlex classes"
+  }
+}
