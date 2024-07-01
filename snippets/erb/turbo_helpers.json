@@ -1,0 +1,50 @@
+{
+  "Turbo Frame Tag": {
+    "scope": "erb",
+    "prefix": "turbo_frame_tag",
+    "body": [
+      "<%= turbo_frame_tag '${1:id}' do %>",
+      "  $0",
+      "<% end %>"
+    ],
+    "description": "Creates a turbo_frame_tag in ERB"
+  },
+  "Turbo Frame Tag with Source": {
+    "scope": "erb",
+    "prefix": "turbo_frame_tag",
+    "body": [
+      "<%= turbo_frame_tag '${1:id}', src: '${2:source_url}' %>"
+    ],
+    "description": "Creates a turbo_frame_tag with source in ERB"
+  },
+  "Turbo Frame Tag with Target": {
+    "scope": "erb",
+    "prefix": "turbo_frame_tag",
+    "body": [
+      "<%= turbo_frame_tag '${1:id}', target: '${2:target}' do %>",
+      "  $0",
+      "<% end %>"
+    ],
+    "description": "Creates a turbo_frame_tag with target in ERB"
+  },
+  "Turbo Frame Tag with Action": {
+    "scope": "erb",
+    "prefix": "turbo_frame_tag",
+    "body": [
+      "<%= turbo_frame_tag '${1:id}', action: '${2:action}' do %>",
+      "  $0",
+      "<% end %>"
+    ],
+    "description": "Creates a turbo_frame_tag with action in ERB"
+  },
+  "Turbo Frame Tag with Loading": {
+    "scope": "erb",
+    "prefix": "turbo_frame_tag",
+    "body": [
+      "<%= turbo_frame_tag '${1:id}', loading: '${2:eager}' do %>",
+      "  $0",
+      "<% end %>"
+    ],
+    "description": "Creates a turbo_frame_tag with loading in ERB"
+  }
+}

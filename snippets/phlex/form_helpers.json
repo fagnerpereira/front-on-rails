@@ -1,0 +1,547 @@
+{
+  "Form For": {
+    "prefix": "form_for",
+    "body": [
+      "form_for ${1:@object} do |${2:form}|",
+      "  $0",
+      "end"
+    ],
+    "description": "Creates a form_for block in PHLEX"
+  },
+  "Form With": {
+    "prefix": "form_with",
+    "body": [
+      "form_with model: ${1:@object} do |${2:form}|",
+      "  $0",
+      "end"
+    ],
+    "description": "Creates a form_with block in PHLEX"
+  },
+  "FormTag": {
+    "prefix": "form_tag",
+    "body": [
+      "form_tag ${1:url_path} do",
+      "  $0",
+      "end"
+    ],
+    "description": "Creates a FormTag in PHLEX"
+  },
+  "CheckBox": {
+    "prefix": "check_box",
+    "body": [
+      "check_box '${1:object}', '${2:field}'"
+    ],
+    "description": "Creates a CheckBox in PHLEX"
+  },
+  "CheckBoxTag": {
+    "prefix": "check_box_tag",
+    "body": [
+      "check_box_tag '${1:name}', ${2:value}, ${3:checked}"
+    ],
+    "description": "Creates a CheckBoxTag in PHLEX"
+  },
+  "CollectionCheckBoxes": {
+    "prefix": "collection_check_boxes",
+    "body": [
+      "collection_check_boxes '${1:object}', '${2:field}', ${3:collection}, ${4:value_method}, ${5:text_method}"
+    ],
+    "description": "Creates a CollectionCheckBoxes in PHLEX"
+  },
+  "CollectionRadioButtons": {
+    "prefix": "collection_radio_buttons",
+    "body": [
+      "collection_radio_buttons '${1:object}', '${2:field}', ${3:collection}, ${4:value_method}, ${5:text_method}"
+    ],
+    "description": "Creates a CollectionRadioButtons in PHLEX"
+  },
+  "CollectionSelect": {
+    "prefix": "collection_select",
+    "body": [
+      "collection_select '${1:object}', '${2:field}', ${3:collection}, ${4:value_method}, ${5:text_method}"
+    ],
+    "description": "Creates a CollectionSelect in PHLEX"
+  },
+  "ColorField": {
+    "prefix": "color_field",
+    "body": [
+      "color_field '${1:object}', '${2:field}'"
+    ],
+    "description": "Creates a ColorField in PHLEX"
+  },
+  "ColorFieldTag": {
+    "prefix": "color_field_tag",
+    "body": [
+      "color_field_tag '${1:name}', '${2:value}'"
+    ],
+    "description": "Creates a ColorFieldTag in PHLEX"
+  },
+  "DateField": {
+    "prefix": "date_field",
+    "body": [
+      "date_field '${1:object}', '${2:field}'"
+    ],
+    "description": "Creates a DateField in PHLEX"
+  },
+  "DateFieldTag": {
+    "prefix": "date_field_tag",
+    "body": [
+      "date_field_tag '${1:name}', '${2:value}'"
+    ],
+    "description": "Creates a DateFieldTag in PHLEX"
+  },
+  "DateSelect": {
+    "prefix": "date_select",
+    "body": [
+      "date_select '${1:object}', '${2:field}'"
+    ],
+    "description": "Creates a DateSelect in PHLEX"
+  },
+  "DatetimeField": {
+    "prefix": "datetime_field",
+    "body": [
+      "datetime_field '${1:object}', '${2:field}'"
+    ],
+    "description": "Creates a DatetimeField in PHLEX"
+  },
+  "DatetimeFieldTag": {
+    "prefix": "datetime_field_tag",
+    "body": [
+      "datetime_field_tag '${1:name}', '${2:value}'"
+    ],
+    "description": "Creates a DatetimeFieldTag in PHLEX"
+  },
+  "DatetimeLocalField": {
+    "prefix": "datetime_local_field",
+    "body": [
+      "datetime_local_field '${1:object}', '${2:field}'"
+    ],
+    "description": "Creates a DatetimeLocalField in PHLEX"
+  },
+  "DatetimeLocalFieldTag": {
+    "prefix": "datetime_local_field_tag",
+    "body": [
+      "datetime_local_field_tag '${1:name}', '${2:value}'"
+    ],
+    "description": "Creates a DatetimeLocalFieldTag in PHLEX"
+  },
+  "DatetimeSelect": {
+    "prefix": "datetime_select",
+    "body": [
+      "datetime_select '${1:object}', '${2:field}'"
+    ],
+    "description": "Creates a DatetimeSelect in PHLEX"
+  },
+  "EmailField": {
+    "prefix": "email_field",
+    "body": [
+      "email_field '${1:object}', '${2:field}'"
+    ],
+    "description": "Creates an EmailField in PHLEX"
+  },
+  "EmailFieldTag": {
+    "prefix": "email_field_tag",
+    "body": [
+      "email_field_tag '${1:name}', '${2:value}'"
+    ],
+    "description": "Creates an EmailFieldTag in PHLEX"
+  },
+  "FieldID": {
+    "prefix": "field_id",
+    "body": [
+      "field_id(${1:object}, '${2:field}')"
+    ],
+    "description": "Creates a FieldID in PHLEX"
+  },
+  "FieldName": {
+    "prefix": "field_name",
+    "body": [
+      "field_name(${1:object}, '${2:field}')"
+    ],
+    "description": "Creates a FieldName in PHLEX"
+  },
+  "FieldSetTag": {
+    "prefix": "field_set_tag",
+    "body": [
+      "field_set_tag '${1:legend}' do",
+      "  $0",
+      "end"
+    ],
+    "description": "Creates a FieldSetTag in PHLEX"
+  },
+  "Fields": {
+    "prefix": "fields",
+    "body": [
+      "fields '${1:object}', '${2:scope}' do |${3:form}|",
+      "  $0",
+      "end"
+    ],
+    "description": "Creates Fields in PHLEX"
+  },
+  "FieldsFor": {
+    "prefix": "fields_for",
+    "body": [
+      "fields_for '${1:object}', '${2:scope}' do |${3:form}|",
+      "  $0",
+      "end"
+    ],
+    "description": "Creates FieldsFor in PHLEX"
+  },
+  "FileField": {
+    "prefix": "file_field",
+    "body": [
+      "file_field '${1:object}', '${2:field}'"
+    ],
+    "description": "Creates a FileField in PHLEX"
+  },
+  "FileFieldTag": {
+    "prefix": "file_field_tag",
+    "body": [
+      "file_field_tag '${1:name}'"
+    ],
+    "description": "Creates a FileFieldTag in PHLEX"
+  },
+
+  "GroupedCollectionSelect": {
+    "prefix": "grouped_collection_select",
+    "body": [
+      "grouped_collection_select '${1:object}', '${2:field}', ${3:collection}, ${4:group_method}, ${5:group_label_method}, ${6:option_key_method}, ${7:option_value_method}"
+    ],
+    "description": "Creates a GroupedCollectionSelect in PHLEX"
+  },
+  "GroupedOptionsForSelect": {
+    "prefix": "grouped_options_for_select",
+    "body": [
+      "grouped_options_for_select(${1:grouped_options})"
+    ],
+    "description": "Creates a GroupedOptionsForSelect in PHLEX"
+  },
+  "HiddenField": {
+    "prefix": "hidden_field",
+    "body": [
+      "hidden_field '${1:object}', '${2:field}'"
+    ],
+    "description": "Creates a HiddenField in PHLEX"
+  },
+  "HiddenFieldTag": {
+    "prefix": "hidden_field_tag",
+    "body": [
+      "hidden_field_tag '${1:name}', '${2:value}'"
+    ],
+    "description": "Creates a HiddenFieldTag in PHLEX"
+  },
+  "Label": {
+    "prefix": "label",
+    "body": [
+      "label '${1:object}', '${2:field}', '${3:text}'"
+    ],
+    "description": "Creates a Label in PHLEX"
+  },
+  "LabelTag": {
+    "prefix": "label_tag",
+    "body": [
+      "label_tag '${1:name}', '${2:content}'"
+    ],
+    "description": "Creates a LabelTag in PHLEX"
+  },
+  "MonthField": {
+    "prefix": "month_field",
+    "body": [
+      "month_field '${1:object}', '${2:field}'"
+    ],
+    "description": "Creates a MonthField in PHLEX"
+  },
+  "MonthFieldTag": {
+    "prefix": "month_field_tag",
+    "body": [
+      "month_field_tag '${1:name}', '${2:value}'"
+    ],
+    "description": "Creates a MonthFieldTag in PHLEX"
+  },
+  "NumberField": {
+    "prefix": "number_field",
+    "body": [
+      "number_field '${1:object}', '${2:field}'"
+    ],
+    "description": "Creates a NumberField in PHLEX"
+  },
+  "NumberFieldTag": {
+    "prefix": "number_field_tag",
+    "body": [
+      "number_field_tag '${1:name}', '${2:value}'"
+    ],
+    "description": "Creates a NumberFieldTag in PHLEX"
+  },
+  "PasswordField": {
+    "prefix": "password_field",
+    "body": [
+      "password_field '${1:object}', '${2:field}'"
+    ],
+    "description": "Creates a PasswordField in PHLEX"
+  },
+  "PasswordFieldTag": {
+    "prefix": "password_field_tag",
+    "body": [
+      "password_field_tag '${1:name}'"
+    ],
+    "description": "Creates a PasswordFieldTag in PHLEX"
+  },
+  "PhoneField": {
+    "prefix": "phone_field",
+    "body": [
+      "phone_field '${1:object}', '${2:field}'"
+    ],
+    "description": "Creates a PhoneField in PHLEX"
+  },
+  "PhoneFieldTag": {
+    "prefix": "phone_field_tag",
+    "body": [
+      "phone_field_tag '${1:name}', '${2:value}'"
+    ],
+    "description": "Creates a PhoneFieldTag in PHLEX"
+  },
+  "RadioButton": {
+    "prefix": "radio_button",
+    "body": [
+      "radio_button '${1:object}', '${2:field}', '${3:value}'"
+    ],
+    "description": "Creates a RadioButton in PHLEX"
+  },
+  "RadioButtonTag": {
+    "prefix": "radio_button_tag",
+    "body": [
+      "radio_button_tag '${1:name}', '${2:value}'"
+    ],
+    "description": "Creates a RadioButtonTag in PHLEX"
+  },
+  "RangeField": {
+    "prefix": "range_field",
+    "body": [
+      "range_field '${1:object}', '${2:field}'"
+    ],
+    "description": "Creates a RangeField in PHLEX"
+  },
+  "RangeFieldTag": {
+    "prefix": "range_field_tag",
+    "body": [
+      "range_field_tag '${1:name}', '${2:value}'"
+    ],
+    "description": "Creates a RangeFieldTag in PHLEX"
+  },
+  "RichTextArea": {
+    "prefix": "rich_text_area",
+    "body": [
+      "rich_text_area '${1:object}', '${2:field}'"
+    ],
+    "description": "Creates a RichTextArea in PHLEX"
+  },
+  "SearchField": {
+    "prefix": "search_field",
+    "body": [
+      "search_field '${1:object}', '${2:field}'"
+    ],
+    "description": "Creates a SearchField in PHLEX"
+  },
+  "SearchFieldTag": {
+    "prefix": "search_field_tag",
+    "body": [
+      "search_field_tag '${1:name}', '${2:value}'"
+    ],
+    "description": "Creates a SearchFieldTag in PHLEX"
+  },
+  "Select": {
+    "prefix": "select",
+    "body": [
+      "select '${1:object}', '${2:field}', ${3:options}"
+    ],
+    "description": "Creates a Select in PHLEX"
+  },
+  "SelectDate": {
+    "prefix": "select_date",
+    "body": [
+      "select_date '${1:object}', '${2:field}'"
+    ],
+    "description": "Creates a SelectDate in PHLEX"
+  },
+  "SelectDatetime": {
+    "prefix": "select_datetime",
+    "body": [
+      "select_datetime '${1:object}', '${2:field}'"
+    ],
+    "description": "Creates a SelectDatetime in PHLEX"
+  },
+  "SelectDay": {
+    "prefix": "select_day",
+    "body": [
+      "select_day '${1:object}', '${2:field}'"
+    ],
+    "description": "Creates a SelectDay in PHLEX"
+  },
+  "SelectHour": {
+    "prefix": "select_hour",
+    "body": [
+      "select_hour '${1:object}', '${2:field}'"
+    ],
+    "description": "Creates a SelectHour in PHLEX"
+  },
+  "SelectMinute": {
+    "prefix": "select_minute",
+    "body": [
+      "select_minute '${1:object}', '${2:field}'"
+    ],
+    "description": "Creates a SelectMinute in PHLEX"
+  },
+  "SelectMonth": {
+    "prefix": "select_month",
+    "body": [
+      "select_month '${1:object}', '${2:field}'"
+    ],
+    "description": "Creates a SelectMonth in PHLEX"
+  },
+  "SelectSecond": {
+    "prefix": "select_second",
+    "body": [
+      "select_second '${1:object}', '${2:field}'"
+    ],
+    "description": "Creates a SelectSecond in PHLEX"
+  },
+  "SelectTag": {
+    "prefix": "select_tag",
+    "body": [
+      "select_tag '${1:name}', ${2:option_tags}"
+    ],
+    "description": "Creates a SelectTag in PHLEX"
+  },
+  "SelectTime": {
+    "prefix": "select_time",
+    "body": [
+      "select_time '${1:object}', '${2:field}'"
+    ],
+    "description": "Creates a SelectTime in PHLEX"
+  },
+  "SelectYear": {
+    "prefix": "select_year",
+    "body": [
+      "select_year '${1:object}', '${2:field}'"
+    ],
+    "description": "Creates a SelectYear in PHLEX"
+  },
+  "TelephoneField": {
+    "prefix": "telephone_field",
+    "body": [
+      "telephone_field '${1:object}', '${2:field}'"
+    ],
+    "description": "Creates a TelephoneField in PHLEX"
+  },
+  "TelephoneFieldTag": {
+    "prefix": "telephone_field_tag",
+    "body": [
+      "telephone_field_tag '${1:name}', '${2:value}'"
+    ],
+    "description": "Creates a TelephoneFieldTag in PHLEX"
+  },
+  "TextArea": {
+    "prefix": "text_area",
+    "body": [
+      "text_area '${1:object}', '${2:field}'"
+    ],
+    "description": "Creates a TextArea in PHLEX"
+  },
+  "TextAreaTag": {
+    "prefix": "text_area_tag",
+    "body": [
+      "text_area_tag '${1:name}', '${2:content}'"
+    ],
+    "description": "Creates a TextAreaTag in PHLEX"
+  },
+  "TextField": {
+    "prefix": "text_field",
+    "body": [
+      "text_field '${1:object}', '${2:field}'"
+    ],
+    "description": "Creates a TextField in PHLEX"
+  },
+  "TextFieldTag": {
+    "prefix": "text_field_tag",
+    "body": [
+      "text_field_tag '${1:name}', '${2:value}'"
+    ],
+    "description": "Creates a TextFieldTag in PHLEX"
+  },
+  "TimeField": {
+    "prefix": "time_field",
+    "body": [
+      "time_field '${1:object}', '${2:field}'"
+    ],
+    "description": "Creates a TimeField in PHLEX"
+  },
+  "TimeFieldTag": {
+    "prefix": "time_field_tag",
+    "body": [
+      "time_field_tag '${1:name}', '${2:value}'"
+    ],
+    "description": "Creates a TimeFieldTag in PHLEX"
+  },
+  "TimeSelect": {
+    "prefix": "time_select",
+    "body": [
+      "time_select '${1:object}', '${2:field}'"
+    ],
+    "description": "Creates a TimeSelect in PHLEX"
+  },
+  "TimeTag": {
+    "prefix": "time_tag",
+    "body": [
+      "time_tag ${1:date_or_time}, '${2:content}'"
+    ],
+    "description": "Creates a TimeTag in PHLEX"
+  },
+  "URLField": {
+    "prefix": "url_field",
+    "body": [
+      "url_field '${1:object}', '${2:field}'"
+    ],
+    "description": "Creates a URLField in PHLEX"
+  },
+  "URLFieldTag": {
+    "prefix": "url_field_tag",
+    "body": [
+      "url_field_tag '${1:name}', '${2:value}'"
+    ],
+    "description": "Creates a URLFieldTag in PHLEX"
+  },
+  "URLFor": {
+    "prefix": "url_for",
+    "body": [
+      "url_for(${1:options})"
+    ],
+    "description": "Creates a URLFor in PHLEX"
+  },
+  "WeekField": {
+    "prefix": "week_field",
+    "body": [
+      "week_field '${1:object}', '${2:field}'"
+    ],
+    "description": "Creates a WeekField in PHLEX"
+  },
+  "WeekFieldTag": {
+    "prefix": "week_field_tag",
+    "body": [
+      "week_field_tag '${1:name}', '${2:value}'"
+    ],
+    "description": "Creates a WeekFieldTag in PHLEX"
+  },
+  "WeekdayOptionsForSelect": {
+    "prefix": "weekday_options_for_select",
+    "body": [
+      "weekday_options_for_select"
+    ],
+    "description": "Creates WeekdayOptionsForSelect in PHLEX"
+  },
+  "WeekdaySelect": {
+    "prefix": "weekday_select",
+    "body": [
+      "weekday_select '${1:object}', '${2:field}'"
+    ],
+    "description": "Creates a WeekdaySelect in PHLEX"
+  }
+}

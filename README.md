@@ -29,6 +29,7 @@ Open a `.rb` or `.erb` file and use the provided snippets. For example, type `li
 ### Phlex Snippets
 
 - working in progress
+- todo: https://rubydoc.info/gems/phlex-rails/Phlex/Rails/Helpers
 
 ## Contributing
 

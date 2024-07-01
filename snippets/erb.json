@@ -9,7 +9,23 @@
   "Link To Block": {
     "prefix": "link_to",
     "body": [
-      "<%= link_to '${1:url_path}' do %>",
+      "<%= link_to ${1:url_path} do %>",
+      "  $0",
+      "<% end %>"
+    ],
+    "description": "Creates a link_to block in ERB"
+  },
+  "Link To Inline shortcut": {
+    "prefix": "lt",
+    "body": [
+      "<%= link_to '${1:Link Text}', ${2:url_path} %>"
+    ],
+    "description": "Creates a link_to inline in ERB"
+  },
+  "Link To Block shortcut": {
+    "prefix": "lt",
+    "body": [
+      "<%= link_to ${1:url_path} do %>",
       "  $0",
       "<% end %>"
     ],

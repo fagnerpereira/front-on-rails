@@ -1,0 +1,53 @@
+{
+  "TurboFrameTag": {
+    "prefix": "turbo_frame_tag",
+    "body": [
+      "turbo_frame_tag '${1:id}' do",
+      "  $0",
+      "end"
+    ],
+    "description": "Creates a TurboFrameTag in PHLEX"
+  },
+  "TurboIncludeTags": {
+    "prefix": "turbo_include_tags",
+    "body": [
+      "turbo_include_tags"
+    ],
+    "description": "Creates TurboIncludeTags in PHLEX"
+  },
+  "TurboRefreshMethodTag": {
+    "prefix": "turbo_refresh_method_tag",
+    "body": [
+      "turbo_refresh_method_tag"
+    ],
+    "description": "Creates a TurboRefreshMethodTag in PHLEX"
+  },
+  "TurboRefreshScrollTag": {
+    "prefix": "turbo_refresh_scroll_tag",
+    "body": [
+      "turbo_refresh_scroll_tag"
+    ],
+    "description": "Creates a TurboRefreshScrollTag in PHLEX"
+  },
+  "TurboRefreshesWith": {
+    "prefix": "turbo_refreshes_with",
+    "body": [
+      "turbo_refreshes_with"
+    ],
+    "description": "Creates a TurboRefreshesWith in PHLEX"
+  },
+  "TurboStream": {
+    "prefix": "turbo_stream",
+    "body": [
+      "turbo_stream ${1:operation}, '${2:target}', ${3:content}"
+    ],
+    "description": "Creates a TurboStream in PHLEX"
+  },
+  "TurboStreamFrom": {
+    "prefix": "turbo_stream_from",
+    "body": [
+      "turbo_stream_from ${1:streamable}, '${2:channel}'"
+    ],
+    "description": "Creates a TurboStreamFrom in PHLEX"
+  }
+}

@@ -12,7 +12,7 @@
     ],
     "description": "New Phlex Component class."
   },
-  "New phlex component shortcut": {
+  "New phlex component class shortcut": {
     "scope": "ruby",
     "prefix": ["component"],
     "body": [
@@ -59,10 +59,786 @@
   "Link To Block": {
     "prefix": "link_to",
     "body": [
-      "link_to '${1:url_path}' do",
+      "link_to ${1:url_path} do",
       "  $0",
       "end"
     ],
     "description": "Creates a link_to block in PHLEX"
+  },
+  "Link To Inline shortcut": {
+    "prefix": "lt",
+    "body": [
+      "link_to '${1:Link Text}', ${2:url_path}"
+    ],
+    "description": "Creates a link_to inline in PHLEX"
+  },
+  "Link To Block shortcut": {
+    "prefix": "lt",
+    "body": [
+      "link_to ${1:url_path} do",
+      "  $0",
+      "end"
+    ],
+    "description": "Creates a link_to block in PHLEX"
+  },
+  "Button To Inline": {
+    "prefix": "button_to",
+    "body": [
+      "button_to '${1:Button Text}', ${2:url_path}"
+    ],
+    "description": "Creates a button_to inline in PHLEX"
+  },
+  "Button To Block": {
+    "prefix": "button_to",
+    "body": [
+      "button_to ${1:url_path} do",
+      "  $0",
+      "end"
+    ],
+    "description": "Creates a button_to block in PHLEX"
+  },
+  "Button To Inline shortcut": {
+    "prefix": "bt",
+    "body": [
+      "button_to '${1:Button Text}', ${2:url_path}"
+    ],
+    "description": "Creates a button_to inline in PHLEX"
+  },
+  "Button To Block shortcut": {
+    "prefix": "bt",
+    "body": [
+      "button_to ${1:url_path} do",
+      "  $0",
+      "end"
+    ],
+    "description": "Creates a button_to block in PHLEX"
+  },
+  "Image Tag": {
+    "prefix": "image_tag",
+    "body": [
+      "image_tag '${1:source}'"
+    ],
+    "description": "Creates an image_tag in PHLEX"
+  },
+  "JavaScript Include Tag": {
+    "prefix": "javascript_include_tag",
+    "body": [
+      "javascript_include_tag '${1:source}'"
+    ],
+    "description": "Creates a javascript_include_tag in PHLEX"
+  },
+  "Stylesheet Link Tag": {
+    "prefix": "stylesheet_link_tag",
+    "body": [
+      "stylesheet_link_tag '${1:source}'"
+    ],
+    "description": "Creates a stylesheet_link_tag in PHLEX"
+  },
+  "Content Tag": {
+    "prefix": "content_tag",
+    "body": [
+      "content_tag :${1:tag}, ${2:content}"
+    ],
+    "description": "Creates a content_tag in PHLEX"
+  },
+  "ActionCableMetaTag": {
+    "prefix": "action_cable_meta_tag",
+    "body": [
+      "action_cable_meta_tag"
+    ],
+    "description": "Creates an ActionCableMetaTag in PHLEX"
+  },
+  "ActionName": {
+    "prefix": "action_name",
+    "body": [
+      "action_name"
+    ],
+    "description": "Creates an ActionName in PHLEX"
+  },
+  "AssetPath": {
+    "prefix": "asset_path",
+    "body": [
+      "asset_path '${1:asset}'"
+    ],
+    "description": "Creates an AssetPath in PHLEX"
+  },
+  "AssetURL": {
+    "prefix": "asset_url",
+    "body": [
+      "asset_url '${1:asset}'"
+    ],
+    "description": "Creates an AssetURL in PHLEX"
+  },
+  "AudioPath": {
+    "prefix": "audio_path",
+    "body": [
+      "audio_path '${1:audio}'"
+    ],
+    "description": "Creates an AudioPath in PHLEX"
+  },
+  "AudioTag": {
+    "prefix": "audio_tag",
+    "body": [
+      "audio_tag '${1:audio}'"
+    ],
+    "description": "Creates an AudioTag in PHLEX"
+  },
+  "AudioURL": {
+    "prefix": "audio_url",
+    "body": [
+      "audio_url '${1:audio}'"
+    ],
+    "description": "Creates an AudioURL in PHLEX"
+  },
+  "ButtonTag": {
+    "prefix": "button_tag",
+    "body": [
+      "button_tag '${1:Button Text}'"
+    ],
+    "description": "Creates a ButtonTag in PHLEX"
+  },
+  "ButtonTo": {
+    "prefix": "button_to",
+    "body": [
+      "button_to '${1:Button Text}', ${2:url_path}"
+    ],
+    "description": "Creates a ButtonTo in PHLEX"
+  },
+  "ContentFor": {
+    "prefix": "content_for",
+    "body": [
+      "content_for '${1:name}', ${2:content}"
+    ],
+    "description": "Creates a ContentFor in PHLEX"
+  },
+  "ContentTag": {
+    "prefix": "content_tag",
+    "body": [
+      "content_tag :${1:tag}, ${2:content}"
+    ],
+    "description": "Creates a ContentTag in PHLEX"
+  },
+  "CurrentPage": {
+    "prefix": "current_page?",
+    "body": [
+      "current_page?(${1:url_path})"
+    ],
+    "description": "Creates a CurrentPage in PHLEX"
+  },
+  "DOMID": {
+    "prefix": "dom_id",
+    "body": [
+      "dom_id(${1:record})"
+    ],
+    "description": "Creates a DOMID in PHLEX"
+  },
+  "Debug": {
+    "prefix": "debug",
+    "body": [
+      "debug(${1:object})"
+    ],
+    "description": "Creates a Debug in PHLEX"
+  },
+  "DefaultURLOptions": {
+    "prefix": "default_url_options",
+    "body": [
+      "default_url_options"
+    ],
+    "description": "Creates a DefaultURLOptions in PHLEX"
+  },
+  "DistanceOfTimeInWords": {
+    "prefix": "distance_of_time_in_words",
+    "body": [
+      "distance_of_time_in_words(${1:from_time}, ${2:to_time})"
+    ],
+    "description": "Creates a DistanceOfTimeInWords in PHLEX"
+  },
+  "DistanceOfTimeInWordsToNow": {
+    "prefix": "distance_of_time_in_words_to_now",
+    "body": [
+      "distance_of_time_in_words_to_now(${1:from_time})"
+    ],
+    "description": "Creates a DistanceOfTimeInWordsToNow in PHLEX"
+  },
+
+  "ErrorMessage": {
+    "prefix": "error_message",
+    "body": [
+      "error_message"
+    ],
+    "description": "Creates an ErrorMessage in PHLEX"
+  },
+  "ErrorWrapping": {
+    "prefix": "error_wrapping",
+    "body": [
+      "error_wrapping"
+    ],
+    "description": "Creates an ErrorWrapping in PHLEX"
+  },
+  "EscapeOnce": {
+    "prefix": "escape_once",
+    "body": [
+      "escape_once(${1:html})"
+    ],
+    "description": "Creates an EscapeOnce in PHLEX"
+  },
+  "Excerpt": {
+    "prefix": "excerpt",
+    "body": [
+      "excerpt(${1:text}, ${2:phrase})"
+    ],
+    "description": "Creates an Excerpt in PHLEX"
+  },
+  "FaviconLinkTag": {
+    "prefix": "favicon_link_tag",
+    "body": [
+      "favicon_link_tag('${1:source}')"
+    ],
+    "description": "Creates a FaviconLinkTag in PHLEX"
+  },
+  "Flash": {
+    "prefix": "flash",
+    "body": [
+      "flash"
+    ],
+    "description": "Creates a Flash in PHLEX"
+  },
+  "FontPath": {
+    "prefix": "font_path",
+    "body": [
+      "font_path('${1:font}')"
+    ],
+    "description": "Creates a FontPath in PHLEX"
+  },
+  "FontURL": {
+    "prefix": "font_url",
+    "body": [
+      "font_url('${1:font}')"
+    ],
+    "description": "Creates a FontURL in PHLEX"
+  },
+
+  "Highlight": {
+    "prefix": "highlight",
+    "body": [
+      "highlight(${1:text}, ${2:phrases})"
+    ],
+    "description": "Creates a Highlight in PHLEX"
+  },
+  "ImagePath": {
+    "prefix": "image_path",
+    "body": [
+      "image_path('${1:image}')"
+    ],
+    "description": "Creates an ImagePath in PHLEX"
+  },
+  "ImageSubmitTag": {
+    "prefix": "image_submit_tag",
+    "body": [
+      "image_submit_tag '${1:source}'"
+    ],
+    "description": "Creates an ImageSubmitTag in PHLEX"
+  },
+  "ImageTag": {
+    "prefix": "image_tag",
+    "body": [
+      "image_tag '${1:source}'"
+    ],
+    "description": "Creates an ImageTag in PHLEX"
+  },
+  "ImageURL": {
+    "prefix": "image_url",
+    "body": [
+      "image_url '${1:image}'"
+    ],
+    "description": "Creates an ImageURL in PHLEX"
+  },
+  "JavascriptImportModuleTag": {
+    "prefix": "javascript_import_module_tag",
+    "body": [
+      "javascript_import_module_tag '${1:source}'"
+    ],
+    "description": "Creates a JavascriptImportModuleTag in PHLEX"
+  },
+  "JavascriptImportmapTags": {
+    "prefix": "javascript_importmap_tags",
+    "body": [
+      "javascript_importmap_tags"
+    ],
+    "description": "Creates a JavascriptImportmapTags in PHLEX"
+  },
+  "JavascriptIncludeTag": {
+    "prefix": "javascript_include_tag",
+    "body": [
+      "javascript_include_tag '${1:source}'"
+    ],
+    "description": "Creates a JavascriptIncludeTag in PHLEX"
+  },
+  "JavascriptPath": {
+    "prefix": "javascript_path",
+    "body": [
+      "javascript_path '${1:source}'"
+    ],
+    "description": "Creates a JavascriptPath in PHLEX"
+  },
+  "JavascriptTag": {
+    "prefix": "javascript_tag",
+    "body": [
+      "javascript_tag '${1:source}'"
+    ],
+    "description": "Creates a JavascriptTag in PHLEX"
+  },
+  "JavascriptURL": {
+    "prefix": "javascript_url",
+    "body": [
+      "javascript_url '${1:source}'"
+    ],
+    "description": "Creates a JavascriptURL in PHLEX"
+  },
+
+  "LinkTo": {
+    "prefix": "link_to",
+    "body": [
+      "link_to '${1:Link Text}', ${2:url_path}"
+    ],
+    "description": "Creates a LinkTo in PHLEX"
+  },
+  "LinkToIf": {
+    "prefix": "link_to_if",
+    "body": [
+      "link_to_if ${1:condition}, '${2:Link Text}', ${3:url_path}"
+    ],
+    "description": "Creates a LinkToIf in PHLEX"
+  },
+  "LinkToUnless": {
+    "prefix": "link_to_unless",
+    "body": [
+      "link_to_unless ${1:condition}, '${2:Link Text}', ${3:url_path}"
+    ],
+    "description": "Creates a LinkToUnless in PHLEX"
+  },
+  "LinkToUnlessCurrent": {
+    "prefix": "link_to_unless_current",
+    "body": [
+      "link_to_unless_current '${1:Link Text}', ${2:url_path}"
+    ],
+    "description": "Creates a LinkToUnlessCurrent in PHLEX"
+  },
+  "Localize": {
+    "prefix": "localize",
+    "body": [
+      "localize(${1:object})"
+    ],
+    "description": "Creates a Localize in PHLEX"
+  },
+  "MailTo": {
+    "prefix": "mail_to",
+    "body": [
+      "mail_to '${1:email_address}', '${2:link_text}'"
+    ],
+    "description": "Creates a MailTo in PHLEX"
+  },
+
+  "NumberToCurrency": {
+    "prefix": "number_to_currency",
+    "body": [
+      "number_to_currency(${1:number})"
+    ],
+    "description": "Creates a NumberToCurrency in PHLEX"
+  },
+  "NumberToHuman": {
+    "prefix": "number_to_human",
+    "body": [
+      "number_to_human(${1:number})"
+    ],
+    "description": "Creates a NumberToHuman in PHLEX"
+  },
+  "NumberToHumanSize": {
+    "prefix": "number_to_human_size",
+    "body": [
+      "number_to_human_size(${1:number})"
+    ],
+    "description": "Creates a NumberToHumanSize in PHLEX"
+  },
+  "NumberToPercentage": {
+    "prefix": "number_to_percentage",
+    "body": [
+      "number_to_percentage(${1:number})"
+    ],
+    "description": "Creates a NumberToPercentage in PHLEX"
+  },
+  "NumberToPhone": {
+    "prefix": "number_to_phone",
+    "body": [
+      "number_to_phone(${1:number})"
+    ],
+    "description": "Creates a NumberToPhone in PHLEX"
+  },
+  "NumberWithDelimiter": {
+    "prefix": "number_with_delimiter",
+    "body": [
+      "number_with_delimiter(${1:number})"
+    ],
+    "description": "Creates a NumberWithDelimiter in PHLEX"
+  },
+  "NumberWithPrecision": {
+    "prefix": "number_with_precision",
+    "body": [
+      "number_with_precision(${1:number})"
+    ],
+    "description": "Creates a NumberWithPrecision in PHLEX"
+  },
+  "OptionGroupsFromCollectionForSelect": {
+    "prefix": "option_groups_from_collection_for_select",
+    "body": [
+      "option_groups_from_collection_for_select(${1:collection}, ${2:group_label_method}, ${3:group_key_method}, ${4:option_label_method}, ${5:option_key_method})"
+    ],
+    "description": "Creates an OptionGroupsFromCollectionForSelect in PHLEX"
+  },
+  "OptionsForSelect": {
+    "prefix": "options_for_select",
+    "body": [
+      "options_for_select(${1:container})"
+    ],
+    "description": "Creates OptionsForSelect in PHLEX"
+  },
+  "OptionsFromCollectionForSelect": {
+    "prefix": "options_from_collection_for_select",
+    "body": [
+      "options_from_collection_for_select(${1:collection}, ${2:value_method}, ${3:text_method})"
+    ],
+    "description": "Creates OptionsFromCollectionForSelect in PHLEX"
+  },
+
+  "PathToAsset": {
+    "prefix": "path_to_asset",
+    "body": [
+      "path_to_asset '${1:asset}'"
+    ],
+    "description": "Creates a PathToAsset in PHLEX"
+  },
+  "PathToAudio": {
+    "prefix": "path_to_audio",
+    "body": [
+      "path_to_audio '${1:audio}'"
+    ],
+    "description": "Creates a PathToAudio in PHLEX"
+  },
+  "PathToFont": {
+    "prefix": "path_to_font",
+    "body": [
+      "path_to_font '${1:font}'"
+    ],
+    "description": "Creates a PathToFont in PHLEX"
+  },
+  "PathToImage": {
+    "prefix": "path_to_image",
+    "body": [
+      "path_to_image '${1:image}'"
+    ],
+    "description": "Creates a PathToImage in PHLEX"
+  },
+  "PathToJavascript": {
+    "prefix": "path_to_javascript",
+    "body": [
+      "path_to_javascript '${1:javascript}'"
+    ],
+    "description": "Creates a PathToJavascript in PHLEX"
+  },
+  "PathToStylesheet": {
+    "prefix": "path_to_stylesheet",
+    "body": [
+      "path_to_stylesheet '${1:stylesheet}'"
+    ],
+    "description": "Creates a PathToStylesheet in PHLEX"
+  },
+  "PathToVideo": {
+    "prefix": "path_to_video",
+    "body": [
+      "path_to_video '${1:video}'"
+    ],
+    "description": "Creates a PathToVideo in PHLEX"
+  },
+
+  "PhoneTo": {
+    "prefix": "phone_to",
+    "body": [
+      "phone_to '${1:phone_number}'"
+    ],
+    "description": "Creates a PhoneTo in PHLEX"
+  },
+  "Pluralize": {
+    "prefix": "pluralize",
+    "body": [
+      "pluralize(${1:count}, '${2:singular}')"
+    ],
+    "description": "Creates a Pluralize in PHLEX"
+  },
+  "PreloadLinkTag": {
+    "prefix": "preload_link_tag",
+    "body": [
+      "preload_link_tag '${1:source}'"
+    ],
+    "description": "Creates a PreloadLinkTag in PHLEX"
+  },
+  "Provide": {
+    "prefix": "provide",
+    "body": [
+      "provide '${1:key}', ${2:value}"
+    ],
+    "description": "Creates a Provide in PHLEX"
+  },
+  "PublicComputeAssetPath": {
+    "prefix": "public_compute_asset_path",
+    "body": [
+      "public_compute_asset_path '${1:asset}'"
+    ],
+    "description": "Creates a PublicComputeAssetPath in PHLEX"
+  },
+
+  "Request": {
+    "prefix": "request",
+    "body": [
+      "request"
+    ],
+    "description": "Creates a Request in PHLEX"
+  },
+  "ResetCycle": {
+    "prefix": "reset_cycle",
+    "body": [
+      "reset_cycle"
+    ],
+    "description": "Creates a ResetCycle in PHLEX"
+  },
+
+  "Routes": {
+    "prefix": "routes",
+    "body": [
+      "routes"
+    ],
+    "description": "Creates Routes in PHLEX"
+  },
+  "SMSTo": {
+    "prefix": "sms_to",
+    "body": [
+      "sms_to '${1:phone_number}'"
+    ],
+    "description": "Creates an SMSTo in PHLEX"
+  },
+  "Sanitize": {
+    "prefix": "sanitize",
+    "body": [
+      "sanitize(${1:html})"
+    ],
+    "description": "Creates a Sanitize in PHLEX"
+  },
+  "SanitizeCSS": {
+    "prefix": "sanitize_css",
+    "body": [
+      "sanitize_css(${1:css})"
+    ],
+    "description": "Creates a SanitizeCSS in PHLEX"
+  },
+
+  "SimpleFormat": {
+    "prefix": "simple_format",
+    "body": [
+      "simple_format(${1:text})"
+    ],
+    "description": "Creates a SimpleFormat in PHLEX"
+  },
+  "StripLinks": {
+    "prefix": "strip_links",
+    "body": [
+      "strip_links(${1:html})"
+    ],
+    "description": "Creates a StripLinks in PHLEX"
+  },
+  "StripTags": {
+    "prefix": "strip_tags",
+    "body": [
+      "strip_tags(${1:html})"
+    ],
+    "description": "Creates a StripTags in PHLEX"
+  },
+  "StylesheetLinkTag": {
+    "prefix": "stylesheet_link_tag",
+    "body": [
+      "stylesheet_link_tag '${1:source}'"
+    ],
+    "description": "Creates a StylesheetLinkTag in PHLEX"
+  },
+  "StylesheetPath": {
+    "prefix": "stylesheet_path",
+    "body": [
+      "stylesheet_path('${1:stylesheet}')"
+    ],
+    "description": "Creates a StylesheetPath in PHLEX"
+  },
+  "StylesheetURL": {
+    "prefix": "stylesheet_url",
+    "body": [
+      "stylesheet_url('${1:stylesheet}')"
+    ],
+    "description": "Creates a StylesheetURL in PHLEX"
+  },
+  "SubmitTag": {
+    "prefix": "submit_tag",
+    "body": [
+      "submit_tag '${1:value}'"
+    ],
+    "description": "Creates a SubmitTag in PHLEX"
+  },
+  "Tag": {
+    "prefix": "tag",
+    "body": [
+      "tag.${1:tag_name} ${2:options}"
+    ],
+    "description": "Creates a Tag in PHLEX"
+  },
+
+  "TimeAgoInWords": {
+    "prefix": "time_ago_in_words",
+    "body": [
+      "time_ago_in_words(${1:from_time})"
+    ],
+    "description": "Creates a TimeAgoInWords in PHLEX"
+  },
+
+  "TimeZoneOptionsForSelect": {
+    "prefix": "time_zone_options_for_select",
+    "body": [
+      "time_zone_options_for_select(${1:selected})"
+    ],
+    "description": "Creates a TimeZoneOptionsForSelect in PHLEX"
+  },
+  "TimeZoneSelect": {
+    "prefix": "time_zone_select",
+    "body": [
+      "time_zone_select('${1:object}', '${2:method}', ${3:priority_zones})"
+    ],
+    "description": "Creates a TimeZoneSelect in PHLEX"
+  },
+  "TokenList": {
+    "prefix": "token_list",
+    "body": [
+      "token_list(${1:tokens})"
+    ],
+    "description": "Creates a TokenList in PHLEX"
+  },
+  "Translate": {
+    "prefix": "translate",
+    "body": [
+      "translate('${1:key}')"
+    ],
+    "description": "Creates a Translate in PHLEX"
+  },
+  "Truncate": {
+    "prefix": "truncate",
+    "body": [
+      "truncate(${1:text})"
+    ],
+    "description": "Creates a Truncate in PHLEX"
+  },
+
+  "URLOptions": {
+    "prefix": "url_options",
+    "body": [
+      "url_options"
+    ],
+    "description": "Creates URLOptions in PHLEX"
+  },
+  "URLToAsset": {
+    "prefix": "url_to_asset",
+    "body": [
+      "url_to_asset '${1:asset}'"
+    ],
+    "description": "Creates a URLToAsset in PHLEX"
+  },
+  "URLToAudio": {
+    "prefix": "url_to_audio",
+    "body": [
+      "url_to_audio '${1:audio}'"
+    ],
+    "description": "Creates a URLToAudio in PHLEX"
+  },
+  "URLToFont": {
+    "prefix": "url_to_font",
+    "body": [
+      "url_to_font '${1:font}'"
+    ],
+    "description": "Creates a URLToFont in PHLEX"
+  },
+  "URLToImage": {
+    "prefix": "url_to_image",
+    "body": [
+      "url_to_image '${1:image}'"
+    ],
+    "description": "Creates a URLToImage in PHLEX"
+  },
+  "URLToJavascript": {
+    "prefix": "url_to_javascript",
+    "body": [
+      "url_to_javascript '${1:javascript}'"
+    ],
+    "description": "Creates a URLToJavascript in PHLEX"
+  },
+  "URLToStylesheet": {
+    "prefix": "url_to_stylesheet",
+    "body": [
+      "url_to_stylesheet '${1:stylesheet}'"
+    ],
+    "description": "Creates a URLToStylesheet in PHLEX"
+  },
+  "URLToVideo": {
+    "prefix": "url_to_video",
+    "body": [
+      "url_to_video '${1:video}'"
+    ],
+    "description": "Creates a URLToVideo in PHLEX"
+  },
+  "UTF8EnforcerTag": {
+    "prefix": "utf8_enforcer_tag",
+    "body": [
+      "utf8_enforcer_tag"
+    ],
+    "description": "Creates a UTF8EnforcerTag in PHLEX"
+  },
+  "VideoPath": {
+    "prefix": "video_path",
+    "body": [
+      "video_path '${1:video}'"
+    ],
+    "description": "Creates a VideoPath in PHLEX"
+  },
+  "VideoTag": {
+    "prefix": "video_tag",
+    "body": [
+      "video_tag '${1:source}'"
+    ],
+    "description": "Creates a VideoTag in PHLEX"
+  },
+  "VideoURL": {
+    "prefix": "video_url",
+    "body": [
+      "video_url '${1:video}'"
+    ],
+    "description": "Creates a VideoURL in PHLEX"
+  },
+  "WithOutputBuffer": {
+    "prefix": "with_output_buffer",
+    "body": [
+      "with_output_buffer do",
+      "  $0",
+      "end"
+    ],
+    "description": "Creates a WithOutputBuffer in PHLEX"
+  },
+  "WordWrap": {
+    "prefix": "word_wrap",
+    "body": [
+      "word_wrap(${1:text})"
+    ],
+    "description": "Creates a WordWrap in PHLEX"
   }
 }

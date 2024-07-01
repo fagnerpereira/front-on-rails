@@ -8,6 +8,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ### Added
 - New `render_component` snippet for `.erb` files. -->
 
+## [0.0.3] - 2024-07-01
+### Added
+- New Phlex snippets:
+  - support all rails helpers
+- New ERB snippets
+
 ## [0.0.2] - 2024-07-01
 ### Added
 - New Phlex snippets:

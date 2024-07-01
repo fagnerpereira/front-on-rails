@@ -30,15 +30,23 @@
     "snippets": [
       {
         "language": "ruby",
-        "path": "./snippets/ruby.json"
+        "path": "./snippets/phlex/form_helpers.json"
+      },
+      {
+        "language": "ruby",
+        "path": "./snippets/phlex/turbo_helpers.json"
+      },
+      {
+        "language": "ruby",
+        "path": "./snippets/phlex.json"
       },
       {
         "language": "erb",
         "path": "./snippets/erb.json"
       },
       {
-        "language": "ruby",
-        "path": "./snippets/phlex.json"
+        "language": "erb",
+        "path": "./snippets/erb/turbo_helpers.json"
       }
     ]
   },
